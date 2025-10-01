@@ -7,12 +7,15 @@ import com.example.ModelMapperTest.ModelMapperFeatures.Employee.Employee;
 import com.example.ModelMapperTest.ModelMapperFeatures.Employee.EmployeeDto;
 import com.example.ModelMapperTest.ModelMapperFeatures.Event.Event;
 import com.example.ModelMapperTest.ModelMapperFeatures.Event.EventDto;
+import com.example.ModelMapperTest.ModelMapperFeatures.Orders.Order;
+import com.example.ModelMapperTest.ModelMapperFeatures.Orders.OrderDto;
 import com.example.ModelMapperTest.ModelMapperFeatures.Student.Department;
 import com.example.ModelMapperTest.ModelMapperFeatures.Student.Student;
 import com.example.ModelMapperTest.ModelMapperFeatures.Student.StudentDto;
 import com.example.ModelMapperTest.ModelMapperFeatures.User.User;
 import com.example.ModelMapperTest.ModelMapperFeatures.User.UserDto;
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.modelmapper.Converter;
 import org.modelmapper.ModelMapper;
 import org.modelmapper.convention.MatchingStrategies;
@@ -22,9 +25,11 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 
+@Slf4j
 @Configuration
 class AppConfig{
     @Bean
@@ -67,6 +72,25 @@ class AppConfig{
         modelMapper.createTypeMap(Account.class, AccountDto.class).addMappings(mapper->{
             mapper.skip(AccountDto::setPassword);
         });
+
+
+
+        Converter<LocalDateTime,String> localDateTimeStringConverter=context->
+            context.getSource().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm"));
+
+            Converter<Order, OrderDto> postConverter= context1 ->{
+                OrderDto destination= context1.getDestination();
+                double totalCost=destination.getQuantity()*destination.getPrice();
+                destination.setTotalCost(totalCost);
+                return destination;
+            };
+            modelMapper.createTypeMap(Order.class,OrderDto.class)
+                    .addMappings(mapper->
+                        mapper.using(localDateTimeStringConverter).map(Order::getOrderDate,OrderDto::setDateString))
+                        .setPostConverter(postConverter);
+
+
+
 
         return modelMapper;
 
@@ -133,6 +157,14 @@ class DemoRunner implements CommandLineRunner{
 
         System.out.println("Account : "+account);
         System.out.println("AccountDto : "+accountDto);
+
+
+        System.out.println("-------------------------------------------");
+        Order order=new Order(1,LocalDateTime.now(),52.25,20);
+        OrderDto orderDto=modelMapper.map(order, OrderDto.class);
+
+        System.out.println("Order : "+order);
+        System.out.println("OrderDto : "+orderDto);
 
 
 
