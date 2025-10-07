@@ -1,0 +1,17 @@
+server:
+  port: 8888
+
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: "${Spring_mail_username}"
+    password: "${Spring_mail_password}"
+
+    properties:
+      mail:
+        smtp:
+         auth: true
+         starttls:
+           enable: true
+
