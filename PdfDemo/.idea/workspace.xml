@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4dfdb666-171a-4f10-b3de-b3eb85174ab9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../DocumentVerification/.idea/DocumentVerification.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FileIo/.idea/FileIo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Files12/.idea/Files12.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Files3/.idea/Files3.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Ocr/.idea/Ocr.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../PdfJava/.idea/PdfJava.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../SwaggerTest/.idea/SwaggerTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../EmployeeManagement/EmployeeManagement/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EmployeeManagement/EmployeeManagement/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ModelMapperTest/src/main/java/com/example/ModelMapperTest/ModelMapperFeatures/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ModelMapperTest/src/main/java/com/example/ModelMapperTest/ModelMapperFeatures/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MultipleDbConnection/MultipleDbConnection/src/main/java/com/rahul/MultipleDbConnection/Configurations/BookDbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MultipleDbConnection/MultipleDbConnection/src/main/java/com/rahul/MultipleDbConnection/Configurations/BookDbConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../MultipleDbConnection/MultipleDbConnection/src/main/java/com/rahul/MultipleDbConnection/Configurations/UserDbConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../MultipleDbConnection/MultipleDbConnection/src/main/java/com/rahul/MultipleDbConnection/Configurations/UserDbConfig.java" afterDir="false" />
+    <list default="true" id="ec00a08b-8583-44b2-aa5c-a3c9b0938340" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/PdfDemo/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/PdfDemo/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/Controller/PdfController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/PdfDemoApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/PdfDemoApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/Service/DocumentService$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/Service/DocumentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/PdfDemo/target/classes/com/rahul/PdfDemo/Service/DocumentService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,10 +28,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
-  <component name="ProjectId" id="33oaZexo5Aon5ZSNCatszZOROhL" />
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/PdfDemo/src/main/java/com/rahul/PdfDemo/Service/DocumentService.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="33p8DuRu7U3vZedU3uNbrplZJVM" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,19 +50,16 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Sreenivas Bandaru/Desktop/MyProjects/PdfDemo",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "last_opened_file_path": "C:/Users/Sreenivas Bandaru/Desktop/MyProjects/PdfDemo"
   }
 }]]></component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4dfdb666-171a-4f10-b3de-b3eb85174ab9" name="Changes" comment="" />
-      <created>1759985935914</created>
+      <changelist id="ec00a08b-8583-44b2-aa5c-a3c9b0938340" name="Changes" comment="" />
+      <created>1760002539114</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1759985935914</updated>
+      <updated>1760002539114</updated>
     </task>
     <servers />
   </component>
