@@ -1,0 +1,22 @@
+server:
+  port: 1234
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@localhost:1521:XE
+    username: ${username}
+    password: ${password}
+    driver-class-name: oracle.jdbc.OracleDriver
+
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+application:
+  security:
+    jwt:
+      secret-key: KLKeF5a9FocIvjo3vaJm1l3alU3qLPSK57F1YOMOgLT
+      expirationMs: 600000
