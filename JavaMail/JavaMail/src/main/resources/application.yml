@@ -1,0 +1,26 @@
+server:
+  port: 9090
+
+spring:
+  mail:
+    # Standard properties for SENDING mail
+    host: smtp.gmail.com
+    port: 587
+    username: rahulneeli2003@gmail.com
+    password: ${APP_PASSWORD} # Reads from an environment variable
+
+    # Additional JavaMail properties
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true # Corrected property key
+
+  # Custom properties for your RECEIVER service
+  mail-receiver: # Renamed to avoid confusion with the official 'spring.mail' namespace
+    host: imap.gmail.com
+    port: 993
+    username: rahulneeli2003@gmail.com
+    password: ${APP_PASSWORD}
+    attachment-storage-path: ./Attachment
