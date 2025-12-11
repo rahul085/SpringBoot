@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .form-group {
+            margin-bottom: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form action="/register" method="POST">
+
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+        </div>
+
+
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName">
+        </div>
+
+        <div class="form-group">
+            <label for="fatherName">Father Name</label>
+            <input type="text" id="fatherName">
+        </div>
+
+        <div class="form-group">
+            <label for="state">State</label>
+            <select id="state">
+                <option value="">-- Select State --</option>
+                <option>Andhra Pradesh</option>
+                <option>Telangana</option>
+                <option>Maharashtra</option>
+            </select>
+        </div>
+
+
+        <div class="form-group">
+            <label for="district">District</label>
+            <select id="district">
+                <option value="">-- Select District --</option>
+                <option>Guntur</option>
+                <option>Hyderabad</option>
+                <option>Pune</option>
+
+            </select>
+
+
+        </div>
+
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" required>
+        </div>
+
+        <div class="form-group">
+            <label for="pincode">Pin Code</label>
+            <input type="text" id="pincode">
+        </div>
+
+        <div class="form-group">
+            <label>ID</label>
+
+            <div>
+                <input type="radio" id="id" name="id" value="Yes">
+                <label for="id">Yes</label>
+            </div>
+
+            <div>
+                <input type="radio" id="no" name="id" value="no">
+                <label for="no">No</label>
+            </div>
+
+            <div>
+                <input type="radio" id="other" name="id" value="Other">
+                <label for="other">Other</label>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="upload">Upload Id</label>
+            <input type="file" id="Upload">
+        </div>
+
+        <div class="form-group">
+            <label for="mobile">Mobile No</label>
+            <input type="text" id="mobile">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="otp">OTP</label>
+            <input type="text" id="otp">
+        </div>
+
+        <div class="form-group">
+            <input type="button" value="Register">
+        </div>
+
+
+
+</form>
+
+</div>
+
+</body>
+</html>
